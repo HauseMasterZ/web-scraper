@@ -15,7 +15,7 @@ class Scraper:
             url (str): The URL of the product page.
         """
         self.url = url
-        # self.driver = webdriver.Chrome()
+        # self.driver = webdriver.Chrome() # Uncomment for selenium driver.
 
     def extract_longest_continuous_numbers(self, string):
         """
@@ -109,8 +109,10 @@ class Scraper:
         #                        'date': date, 'stars': star_count})
         # return reviews
 
+        # Uncomment till here
 
 
+        # Api Fetching
         api_number = self.extract_longest_continuous_numbers(self.url)
         all_reviews = []
         page = 1
