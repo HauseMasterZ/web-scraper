@@ -172,7 +172,7 @@ if __name__ == '__main__':
             print(f"Customer Name: {review['customerName']}")
             print(f"Review: {review['review']}")
             print(f"Posted Date: {review['posted']}")
-            print(f"Stars: {review['score']}")
+            print(f"Stars: {review['score']} {review['score'] * '★ '}")
             print('')
     else:
         print('There are no reviews for the product yet. Please try again later.')
