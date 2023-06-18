@@ -1,10 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 #Uncomment the following imports if you want to use selenium.
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
 
 class Scraper:
     def __init__(self, url):
@@ -15,7 +15,7 @@ class Scraper:
             url (str): The URL of the product page.
         """
         self.url = url
-        self.driver = webdriver.Chrome()
+        # self.driver = webdriver.Chrome()
 
     def extract_longest_continuous_numbers(self, string):
         """
